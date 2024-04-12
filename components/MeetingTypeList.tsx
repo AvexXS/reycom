@@ -40,7 +40,7 @@ const MeetingTypeList = () => {
       }
       const id = crypto.randomUUID();
       const call = client.call('default', id);
-      if (!call) throw new Error('Failed to create meeting');
+      if (!call) throw new Error('Failed to create meeting try again or contact Reyo Support (discord.gg/reyonodes)');
       const startsAt =
         values.dateTime.toISOString() || new Date(Date.now()).toISOString();
       const description = values.description || 'Instant Meeting';
@@ -61,7 +61,7 @@ const MeetingTypeList = () => {
       });
     } catch (error) {
       console.error(error);
-      toast({ title: 'Failed to create Meeting' });
+      toast({ title: 'Failed to create Meeting try again or contact Reyo Support (discord.gg/reyonodes)' });
     }
   };
 
