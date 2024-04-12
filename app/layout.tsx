@@ -11,8 +11,8 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YOOM",
-  description: "Video calling App",
+  title: "ReyoCom",
+  description: "Reyo advances into communication technology",
   icons: {
     icon: "/icons/logo.svg",
   },
@@ -38,7 +38,7 @@ export default function RootLayout({
           },
         }}
       >
-        <body className={`${inter.className} bg-dark-2`}>
+        <body className={`${inter.className} bg-zinc-900`}>
           <Toaster />
           {children}
         </body>
